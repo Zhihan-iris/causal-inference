@@ -327,8 +327,8 @@
 *				Local data file:
 *				data/RDD/Cattaneo_Idrobo_Titiunik_2019_RD.dta
 *
-*				Original data link:
-*				https://gitee.com/taibaijinxingv/causal-inference/raw/master/RD/CIT_2020_CUP_polecon.dta
+*				Repository data link:
+*				https://raw.githubusercontent.com/Zhihan-iris/causal-inference/main/data/RDD/Cattaneo_Idrobo_Titiunik_2019_RD.dta
 *
 *				Case background:
 *				The example studies close municipal elections. The treatment is
@@ -364,7 +364,7 @@
 	* If the file is missing, Stata downloads it from the original online link.
 	capture confirm file "data/RDD/Cattaneo_Idrobo_Titiunik_2019_RD.dta"
 	if _rc {
-		copy "https://gitee.com/taibaijinxingv/causal-inference/raw/master/RD/CIT_2020_CUP_polecon.dta" ///
+		copy "https://raw.githubusercontent.com/Zhihan-iris/causal-inference/main/data/RDD/Cattaneo_Idrobo_Titiunik_2019_RD.dta" ///
 			"data/RDD/Cattaneo_Idrobo_Titiunik_2019_RD.dta", replace
 	}
 
